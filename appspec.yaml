@@ -1,1 +1,18 @@
-
+---
+version: 0
+os: linux
+files:
+  - source: scripts/test.sh
+    destination: /temp/
+  - source: post-scripts/test.sh
+    destination: /temp/post-scripts
+hooks:
+  BeforeInstall:
+    - location: pre-scripts/checke.sh
+  AfterInstall:
+    - location: post-scripts/TestScript.sh
+      timeout: 60
+  ValidateService:
+    - location: post-scripts/ValidateScript.sh
+      timeout: 300
+      runas: root
