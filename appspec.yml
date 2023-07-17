@@ -3,9 +3,9 @@ version: 0
 os: linux
 files:
   - source: Scripts/test.sh
-    destination: /tmp/
-  - source: post-scripts/test.sh
-    destination: /tmp/post-scripts
+    destination: /temp/
+  - source: post-scripts
+    destination: /temp/post-scripts
 hooks:
   BeforeInstall:
     - location: pre-scripts/checke.sh
