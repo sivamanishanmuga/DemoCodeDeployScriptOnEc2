@@ -2,7 +2,7 @@
 version: 0
 os: linux
 files:
-  - source: scripts/test.sh
+  - source: Scripts/test.sh
     destination: /temp/
   - source: post-scripts/test.sh
     destination: /temp/post-scripts
