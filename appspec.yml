@@ -14,5 +14,5 @@ hooks:
       timeout: 60
   ValidateService:
     - location: post-scripts/ValidateScript.sh
-      timeout: 300
+      timeout: 60
       runas: root
