@@ -10,7 +10,7 @@ hooks:
   BeforeInstall:
     - location: pre-scripts/check.sh
   AfterInstall:
-    - location: post-scripts/TestScript.sh
+    - location: post-scripts/TestScripts.sh
       timeout: 60
   ValidateService:
     - location: post-scripts/ValidateScript.sh
