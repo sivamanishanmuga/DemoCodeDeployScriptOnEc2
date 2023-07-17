@@ -8,7 +8,7 @@ files:
     destination: /temp/post-scripts
 hooks:
   BeforeInstall:
-    - location: pre-scripts/checke.sh
+    - location: pre-scripts/check.sh
   AfterInstall:
     - location: post-scripts/TestScript.sh
       timeout: 60
